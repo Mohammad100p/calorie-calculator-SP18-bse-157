@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+  <body>
+      <div class="container-fluid">
+        <form action="" id="form-id" class="form-inline p-0">
+            <div class="container-fluid p-0">
+            <div class="row">
+                <div class="col-12">
+                    <label for="inlineFormCustomSelectPref" class="my-1 mr-2"><h1>Calorie Calculator</h1></label>
+                    <div id="product_row" class="row">
+                        <div class="col-md-6 d-flex justify-content-end p-2">
+                            <select name="items" id="items">
+                                <option disabled>Milk (higher % of simple carbohydrates; less nutrient dense)</option>
+                                <option id="Option" carbs="26" cal="208">Chocolate Milk (1 Cup)</option>
+                                <option id="Option" carbs="12" cal="131">Low Fat (2%) Milk</option>
+                                <option id="Option" carbs="30" cal="161">Pudding (any flavor) (1/2 cup)</option>
+                                <option id="Option" carbs="12" cal="86">Skim milk (1 cup)</option>
+                                <option id="Option" carbs="42" cal="225">Yogurt (fruit-flavored, low fat) (1 cup)</option>
+                                <option disabled>Beans (higher % of complex carbohydrates; more nutrient dense)</option>
+                                <option id="Option" carbs="22" cal="134" >Black eye peas (1/2 cup)</option>
+                                <option id="Option" carbs="45" cal="269" >Garbanzo beans (chick peas) (1 cup)</option>
+                                <option id="Option" carbs="48" cal="259" >Navy beans (1 cup)</option>
+                                <option id="Option" carbs="44" cal="235" >Pinto beans (1 cup)</option>
+                                <option id="Option" carbs="26" cal="142" >Refried beans (1/2 cup)</option>
+                                <option id="Option" carbs="45" cal="249" >White beans (1 cup)</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 mt-1 p-2">
+                            <button id="add" type="button" class="btn btn-danger btn-sm">Add</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 mb-2 d-flex justify-content-center">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Items</th>
+                                        <th scope="col">Carbohydrates</th>
+                                        <th scope="col">Calories</th>
+                                        <th scope="col">Delete</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="calfood">
+
+                                </tbody>
+                                <tfoot>
+                                    <th scope="row">Total</th>
+                                    <td id="carbtotal">0</td>
+                                    <td id="caltotal">0</td>
+                                </tfoot>
+                            </table>
+                        </div>
+                        <button id="calculate" type="button" class="btn btn-danger btn-sm btn-block">Calculate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </form>
+      </div>
+      <script src="./calorie.js"></script>
+  </body>
+</html>
